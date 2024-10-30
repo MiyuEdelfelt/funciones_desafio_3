@@ -43,12 +43,14 @@ document.addEventListener('keydown', function (event) {
         keyDiv.style.backgroundColor = 'skyblue';
         ultimaTeclaDiv.textContent = 'Última tecla presionada: D';
     } else if (key === 'r') {
-        // Resetear los colores de los divs a blanco
-        divAzul.style.backgroundColor = 'white';
-        divRojo.style.backgroundColor = 'white';
-        divVerde.style.backgroundColor = 'white';
-        divAmarillo.style.backgroundColor = 'white';
+        // Resetear el color del div "key" a blanco
+        keyDiv.style.backgroundColor = 'white';
         ultimaTeclaDiv.textContent = 'Última tecla presionada: R';
+        
+        // Eliminar todos los divs generados dinámicamente en el dynamicContainer
+        while (dynamicContainer.firstChild) {
+            dynamicContainer.removeChild(dynamicContainer.firstChild);
+        }
     }
 
     // Crear un nuevo div con color según la tecla presionada
