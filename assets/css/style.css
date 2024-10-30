@@ -1,0 +1,48 @@
+/* Estilos para alinear los divs de colores horizontalmente */
+.color-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-box {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor del div que cambia de color con teclas */
+#key-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#key {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.glosa {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo para mostrar la última tecla presionada */
+#ultima-tecla {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para el contenedor de divs creados dinámicamente */
+#dynamic-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}

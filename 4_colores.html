@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Colores</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Divs de colores con ID únicos -->
+    <div class="color-container">
+        <div id="divAzul" class="color-box" style="background-color: blue;"></div>
+        <div id="divRojo" class="color-box" style="background-color: red;"></div>
+        <div id="divVerde" class="color-box" style="background-color: green;"></div>
+        <div id="divAmarillo" class="color-box" style="background-color: yellow;"></div>
+    </div>
+
+    <!-- Contenedor para el div que cambia de color con teclas -->
+    <div id="key-container">
+        <div id="key"></div>
+        <div class="glosa">
+            <p>Presiona:</p>
+            <p>A - Rosado</p>
+            <p>S - Naranjo</p>
+            <p>D - Celeste</p>
+            <p>R - Resetear color a blanco</p>
+            <p>Q - Crear div Morado</p>
+            <p>W - Crear div Gris</p>
+            <p>E - Crear div Café</p>
+        </div>
+    </div>
+
+    <!-- Div para mostrar la última tecla presionada -->
+    <div id="ultima-tecla">Última tecla presionada: Ninguna</div>
+
+    <!-- Contenedor para los divs generados dinámicamente -->
+    <div id="dynamic-container" class="color-container"></div>
+
+    <!-- Script -->
+    <script src="assets/js/4_colores.js"></script>
+</body>
+</html>
